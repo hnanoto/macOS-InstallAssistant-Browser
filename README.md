@@ -1,7 +1,25 @@
 # macOS-InstallAssistant-Browser
-macOS-InstallAssistant-Browser
-Navegue, filtre e baixe InstallAssistant (PKG/DMG) direto dos catálogos oficiais da Apple.
+
+Navigate, filter and download InstallAssistant (PKG/DMG) directly from Apple's official catalogs.  
+Navegue, filtre e baixe InstallAssistant (PKG/DMG) direto dos catálogos oficiais da Apple.  
 Foco em praticidade para encontrar a versão/build certa com rapidez.
+
+**Summary / Resumo**  
+Requires macOS 13 or later. Supports browsing InstallAssistant packages for macOS versions available in Apple's catalogs (High Sierra and newer).  
+Requer macOS 13 ou superior. Suporta pacotes InstallAssistant das versões do macOS disponíveis nos catálogos da Apple (High Sierra em diante).
+
+## ⚡ Quick Start / Início rápido
+
+### English
+1. Download the latest release from the **Releases** tab.
+2. Launch `macOS-InstallAssistant-Browser.app`.
+3. Use filters to find an installer and copy the URL or download.
+
+### Português
+1. Baixe a versão mais recente na aba **Releases**.
+2. Abra `macOS-InstallAssistant-Browser.app`.
+3. Use os filtros para localizar um instalador e copie a URL ou baixe.
+
 ✨ O que o app faz
 Consolida itens “InstallAssistant” de múltiplos catálogos da Apple.
 Filtros por Canal (Release, Beta, Developer/Seed) e Tipo (PKG/DMG).
@@ -10,22 +28,42 @@ Copiar URL ou Baixar o pacote diretamente.
 📥 Download
 Vá na aba Releases deste repositório e baixe o arquivo mais recente:
 macOS-InstallAssistant-Browser.zip (ou .dmg quando disponível)
-Requisitos: macOS 13 ou superior.
-🧩 Instalação
-Extraia o .zip (se aplicável).
-Arraste macOS-InstallAssistant-Browser.app para /Applications.
-Abra o app.
-Se o macOS bloquear a abertura (Gatekeeper)
-Primeiro tente clicar com o botão direito → Abrir (duas vezes na primeira execução)
-ou Configurações do Sistema ▸ Privacidade e Segurança ▸ Abrir assim mesmo.
-Se ainda assim não abrir (quarentena do download), use o Terminal:
-# Remover o atributo de quarentena do app
-sudo xattr -dr com.apple.quarantine "/Applications/macOS-InstallAssistant-Browser.app"
+🧩 Installation / Instalação
 
-# (Opcional) Garantir permissão de execução
-chmod -R a+x "/Applications/macOS-InstallAssistant-Browser.app"
-Dica: para conferir a integridade do arquivo baixado, compare o SHA-256 publicado na Release:
+#### English
+1. Extract the `.zip` if needed and drag `macOS-InstallAssistant-Browser.app` to `/Applications`.
+2. Open the app.
+3. If macOS blocks the app (Gatekeeper):
+   - Right‑click and choose **Open** (twice on first run), or
+   - System Settings ▸ Privacy & Security ▸ **Open Anyway**.
+4. If quarantine still prevents launching, run:
+   ```
+   sudo xattr -dr com.apple.quarantine "/Applications/macOS-InstallAssistant-Browser.app"
+   ```
+   Optional: ensure execute permission:
+   ```
+   chmod -R a+x "/Applications/macOS-InstallAssistant-Browser.app"
+   ```
+
+#### Português
+1. Extraia o `.zip` (se necessário) e arraste `macOS-InstallAssistant-Browser.app` para `/Applications`.
+2. Abra o app.
+3. Se o macOS bloquear a abertura (Gatekeeper):
+   - Clique com o botão direito e escolha **Abrir** (duas vezes na primeira execução) ou
+   - Configurações do Sistema ▸ Privacidade e Segurança ▸ **Abrir assim mesmo**.
+4. Se ainda assim não abrir (quarentena do download), execute:
+   ```
+   sudo xattr -dr com.apple.quarantine "/Applications/macOS-InstallAssistant-Browser.app"
+   ```
+   Opcional: garantir permissão de execução:
+   ```
+   chmod -R a+x "/Applications/macOS-InstallAssistant-Browser.app"
+   ```
+
+Tip / Dica: para conferir a integridade do arquivo baixado, compare o SHA-256 publicado na Release:
+```
 shasum -a 256 ~/Downloads/macOS-InstallAssistant-Browser.zip
+```
 ▶️ Como usar
 Abra o app e aguarde o carregamento dos catálogos.
 Use os filtros (Canal/Tipo) para refinar a lista.
