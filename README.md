@@ -150,5 +150,5 @@ The item may have been removed or changed by Apple. Refresh the list and try aga
 
 ### 💬 Support
 - Questions, suggestions, and feedback: open an Issue here in the repository.
-- Community: Hackintosh and Beyond (YouTube-https://discord.gg/5hvZ5u7QXQ/Discord-https://discord.gg/5hvZ5u7QXQ).Telegram-https://t.me/hackintoshandbeyond
+- Community: Hackintosh and Beyond (YouTube-https://t.me/hackintoshandbeyond).Telegram-https://t.me/hackintoshandbeyond Discord-https://discord.gg/5hvZ5u7QXQ
 
