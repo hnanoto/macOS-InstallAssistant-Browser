@@ -45,7 +45,6 @@ shasum -a 256 ~/Downloads/macOS-InstallAssistant-Browser.zip
 3. Selecione um item para **Copiar URL** (área de transferência) ou **Baixar** (do servidor da Apple).
 
 ### 🧭 Fluxograma (como funciona)
-```mermaid
 flowchart TD
     A[Iniciar app] --> B[Carregar catálogos oficiais<br/>swscan.apple.com]
     B --> C[Extrair produtos InstallAssistant]
