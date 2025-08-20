@@ -122,18 +122,16 @@ shasum -a 256 ~/Downloads/macOS-InstallAssistant-Browser.zip
 3. Select an item to **Copy URL** (to the clipboard) or **Download** (from Apple's server).
 
 ### 🧭 Flowchart (how it works)
-```mermaid
 flowchart TD
-    A[Launch app] --> B["Load official catalogs\nswscan.apple.com"]
-    B --> C[Extract InstallAssistant products]
-    C --> D[Normalize items and remove duplicates]
-    D --> E[Apply filters (Channel/Type/Build)]
-    E --> F{User action}
-    F -->|Copy URL| G[URL copied to clipboard]
-    F -->|Download| H[Direct download from Apple server]
-    F -->|View details| I[Show metadata: Version/Build/Date/Catalog/Size]
-    H --> J[Save file to chosen location]
-```
+  A([Iniciar app]) --> B[Carregar catálogos oficiais\nswscan.apple.com]
+  B --> C[Extrair produtos InstallAssistant]
+  C --> D[Normalizar itens e remover duplicados]
+  D --> E[Aplicar filtros: Canal/Tipo/Build]
+  E -->|Copiar URL| G[URL copiada para a área de transferência]
+  E -->|Baixar| H[Download direto do servidor Apple]
+  E -->|Ver detalhes| I[Mostrar metadados: Versão/Build/Data/Catálogo/Tamanho]
+  H --> J[Salvar arquivo no local escolhido]
+
 
 ### ❓ FAQ
 **Why does Size show "N/A"?**  
