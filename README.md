@@ -31,8 +31,10 @@ Abra o app e aguarde o carregamento dos catálogos.
 Use os filtros (Canal/Tipo) para refinar a lista.
 Selecione um item para Copiar URL (área de transferência) ou Baixar (do servidor da Apple).
 🧭 Fluxograma (como funciona)
+
+```mermaid
 flowchart TD
-    A[Iniciar app] --> B[Carregar catálogos oficiais<br/>swscan.apple.com]
+    A([Iniciar app]) --> B[Carregar catálogos oficiais<br/>swscan.apple.com]
     B --> C[Extrair produtos InstallAssistant]
     C --> D[Normalizar itens e remover duplicados]
     D --> E[Aplicar filtros (Canal/Tipo/Build)]
@@ -41,6 +43,36 @@ flowchart TD
     F -->|Baixar| H[Download direto do servidor Apple]
     F -->|Ver detalhes| I[Mostrar metadados: Versão/Build/Data/Catálogo/Tamanho]
     H --> J[Salvar arquivo no local escolhido]
+    classDef start fill:#b3e5fc,stroke:#333,stroke-width:1px;
+    classDef decision fill:#ffe0b2,stroke:#333,stroke-width:1px;
+    class A start;
+    class F decision;
+```
+
+*O diagrama mostra o fluxo de funcionamento do app.*  
+*The diagram shows how the app works.*
+
+🧭 Flowchart (how it works)
+
+```mermaid
+flowchart TD
+    A([Launch app]) --> B[Load official catalogs<br/>swscan.apple.com]
+    B --> C[Extract InstallAssistant products]
+    C --> D[Normalize items and remove duplicates]
+    D --> E[Apply filters (Channel/Type/Build)]
+    E --> F{User action}
+    F -->|Copy URL| G[URL copied to clipboard]
+    F -->|Download| H[Direct download from Apple's server]
+    F -->|View details| I[Show metadata: Version/Build/Date/Catalog/Size]
+    H --> J[Save file to chosen location]
+    classDef start fill:#b3e5fc,stroke:#333,stroke-width:1px;
+    classDef decision fill:#ffe0b2,stroke:#333,stroke-width:1px;
+    class A start;
+    class F decision;
+```
+
+*O diagrama mostra o fluxo de funcionamento do app.*  
+*The diagram shows how the app works.*
 ❓FAQ
 Por que aparece Tamanho “N/A”?
 Alguns catálogos não informam SizeBytes. O download continua funcional.
