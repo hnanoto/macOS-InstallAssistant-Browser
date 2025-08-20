@@ -46,15 +46,14 @@ shasum -a 256 ~/Downloads/macOS-InstallAssistant-Browser.zip
 
 ### 🧭 Fluxograma (como funciona)
 flowchart TD
-    A[Iniciar app] --> B[Carregar catálogos oficiais<br/>swscan.apple.com]
-    B --> C[Extrair produtos InstallAssistant]
-    C --> D[Normalizar itens e remover duplicados]
-    D --> E[Aplicar filtros (Canal/Tipo/Build)]
-    E --> F{Ação do usuário}
-    F -->|Copiar URL| G[URL copiada p/ área de transferência]
-    F -->|Baixar| H[Download direto do servidor Apple]
-    F -->|Ver detalhes| I[Mostrar metadados: Versão/Build/Data/Catálogo/Tamanho]
-    H --> J[Salvar arquivo no local escolhido]
+  A([Iniciar app]) --> B[Carregar catálogos oficiais\nswscan.apple.com]
+  B --> C[Extrair produtos InstallAssistant]
+  C --> D[Normalizar itens e remover duplicados]
+  D --> E[Aplicar filtros: Canal/Tipo/Build]
+  E -->|Copiar URL| G[URL copiada para a área de transferência]
+  E -->|Baixar| H[Download direto do servidor Apple]
+  E -->|Ver detalhes| I[Mostrar metadados: Versão/Build/Data/Catálogo/Tamanho]
+  H --> J[Salvar arquivo no local escolhido]
 
 
 ### ❓ FAQ
