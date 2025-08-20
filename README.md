@@ -47,7 +47,7 @@ shasum -a 256 ~/Downloads/macOS-InstallAssistant-Browser.zip
 ### 🧭 Fluxograma (como funciona)
 ```mermaid
 flowchart TD
-    A[Iniciar app] --> B["Carregar catálogos oficiais\nswscan.apple.com"]
+    A[Iniciar app] --> B[Carregar catálogos oficiais<br/>swscan.apple.com]
     B --> C[Extrair produtos InstallAssistant]
     C --> D[Normalizar itens e remover duplicados]
     D --> E[Aplicar filtros (Canal/Tipo/Build)]
@@ -56,7 +56,7 @@ flowchart TD
     F -->|Baixar| H[Download direto do servidor Apple]
     F -->|Ver detalhes| I[Mostrar metadados: Versão/Build/Data/Catálogo/Tamanho]
     H --> J[Salvar arquivo no local escolhido]
-```
+
 
 ### ❓ FAQ
 **Por que aparece Tamanho "N/A"?**  
