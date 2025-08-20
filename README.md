@@ -47,7 +47,7 @@ shasum -a 256 ~/Downloads/macOS-InstallAssistant-Browser.zip
 ### 🧭 Fluxograma (como funciona)
 ```mermaid
 flowchart TD
-    A[Iniciar app] --> B[Carregar catálogos oficiais<br/>swscan.apple.com]
+    A[Iniciar app] --> B["Carregar catálogos oficiais\nswscan.apple.com"]
     B --> C[Extrair produtos InstallAssistant]
     C --> D[Normalizar itens e remover duplicados]
     D --> E[Aplicar filtros (Canal/Tipo/Build)]
@@ -125,7 +125,7 @@ shasum -a 256 ~/Downloads/macOS-InstallAssistant-Browser.zip
 ### 🧭 Flowchart (how it works)
 ```mermaid
 flowchart TD
-    A[Launch app] --> B[Load official catalogs<br/>swscan.apple.com]
+    A[Launch app] --> B["Load official catalogs\nswscan.apple.com"]
     B --> C[Extract InstallAssistant products]
     C --> D[Normalize items and remove duplicates]
     D --> E[Apply filters (Channel/Type/Build)]
